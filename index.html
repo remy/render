@@ -1,7 +1,36 @@
-<!DOCTYPE html><html _manifest="appcache.php"><head><title>Template Render Preview</title><link rel="stylesheet" href="css/style.css"><script src="js/jade.js"></script><script src="js/jquery.min.js"></script><script src="js/mustache.js"></script><script src="js/markdown.js"></script><script src="js/less.js"></script><script src="js/coffee-script.min.js"></script><script src="js/plates.js"></script><script src="js/underscore.min.js"></script><script src="js/jsrender.js"></script><script src="js/handlebars.min.js"></script><script src="js/app.js"></script></head><body><div class="controls"><label for="lang">Language<select id="lang"></select></label><label for="showlocals">Show locals<input type="checkbox" id="showlocals"/></label></div><form method="post"><div class="code source"><textarea id=locals rows=3>{
+<!DOCTYPE html>
+<html _manifest="appcache.php">
+
+<head>
+  <title>Template Render Preview</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jade/1.11.0/jade.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown.js/0.5.0/markdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.3/less.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plates/0.4.11/plates.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.90/jsrender.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body>
+  <div class="controls">
+    <label for="lang">Language
+      <select id="lang"></select>
+    </label>
+    <label for="showlocals">Show locals
+      <input type="checkbox" id="showlocals" />
+    </label>
+  </div>
+  <form method="post">
+    <div class="code source">
+      <textarea id=locals rows=3>{
 
 }</textarea>
-<textarea id="source" autofocus="autofocus">!!! 5
+      <textarea id="source" autofocus="autofocus">!!! 5
 html
  head
   title My first Jade template
@@ -10,4 +39,12 @@ html
    Woah! jade _and_ markdown, very **cool**
    we can even link to [stuff](http://google.com)
  p This be Jade, but play around - I'll remember what setting you use
-</textarea></div><div class="code render"><pre><code id="render"></code><p></p></pre></div></form></body></html>
+</textarea>
+    </div>
+    <div class="code render">
+      <pre><code id="render"></code><p></p></pre>
+    </div>
+  </form>
+</body>
+
+</html>
